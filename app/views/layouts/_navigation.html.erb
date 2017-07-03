@@ -1,6 +1,6 @@
 <div class="navbar navbar-default navbar-static-top">
       <div class="container">
-        <%= link_to 'Finance Tracker', root_path, class: "navbar-brand" %>
+        <%= link_to 'Stock Tracker', root_path, class: "navbar-brand" %>
         <% if current_user %>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
           <span class="icon-bar"></span>
@@ -20,7 +20,7 @@
             <%= current_user.email %>
         </li>
         <li class="col-md-4 logout"><%= link_to("Logout", destroy_user_session_path,
-        class: 'btn btn-xs btn-danger', method: :delete) %></li>
+        class: 'btn btn-s btn-danger', method: :delete) %></li>
       </ul>
         </div>
         <% end %>
